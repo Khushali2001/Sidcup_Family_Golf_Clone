@@ -23,6 +23,7 @@ body {
 
 body {
   font-size: 1.6rem;
+  overflow-x: hidden !important;
 }
 
 body::-webkit-scrollbar {
@@ -198,6 +199,12 @@ video {
   text-transform: uppercase;
   padding: 10px 3px;
   display: block;
+}
+
+.menu-icon {
+  font-size: 3rem;
+  margin-left: auto;
+  display: none;
 }
 
 /* video css start */
@@ -517,6 +524,7 @@ video {
 }
 #f1 img {
   height: 100px;
+  object-fit: contain;
 }
 #f1,
 #f2,
@@ -555,6 +563,18 @@ video {
 }
 
 @media screen and (max-width: 1600px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .about-us-txt {
+    padding: 0 5%;
+  }
+  #page3 h3 {
+    font-size: 2.6rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -593,6 +613,84 @@ video {
   }
   .col-md-12 {
     width: 100%;
+  }
+
+  #page3 h3 {
+    width: 80%;
+  }
+
+  .nav-menu-list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #page3 h3 {
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  #page1 p {
+    font-size: 2rem;
+    width: 70%;
+  }
+
+  .about-us-txt p {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .card-overlay h4 {
+    font-size: 2rem;
+  }
+
+  #page1 #arrow {
+    height: 130px;
+    width: 130px;
+  }
+
+  .sign-up h4 {
+    width: 50%;
+  }
+
+  .card-inner .card {
+    width: 47%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #footer {
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 30px;
+  }
+
+  #footer > img {
+    display: none;
+  }
+
+  #footer div {
+    width: 46%;
+  }
+
+  div#f1 img {
+    width: auto;
+  }
+
+  .sign-up h4 {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  #footer h3 {
+    font-size: 15px;
+  }
+
+  #footer h4 {
+    font-size: 12px;
   }
 }
 
@@ -669,5 +767,49 @@ video {
   }
   .col-sm-12 {
     width: 100%;
+  }
+
+  #page1 h5 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .about-us-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .about-us-wrapper img {
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .about-us-txt p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  #page1 p {
+    width: 100%;
+  }
+
+  .about-us-txt p {
+    font-size: 1.5rem;
+  }
+
+  #page3 h3 {
+    line-height: 1.5;
+  }
+
+  #page4 .card-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card-inner .card {
+    width: 100%;
+    height: 300px;
   }
 }
