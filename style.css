@@ -769,6 +769,11 @@ video {
     width: 100%;
   }
 
+  #cursor,
+  #cursor-blur {
+    display: none;
+  }
+
   #page1 h5 {
     text-align: center;
     font-size: 2.5rem;
